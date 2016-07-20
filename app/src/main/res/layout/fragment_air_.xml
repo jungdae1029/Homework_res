@@ -1,263 +1,286 @@
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:alignmentMode="alignBounds"
-    android:columnCount="2"
-    tools:context="com.example.user.homeworkapplication.Air_Fragment"
-    android:useDefaultMargins="true"
+    android:layout_gravity="center"
+    android:stretchColumns="*"
+    android:orientation="vertical"
+    android:background="#CDECFA"
+    android:padding="5dp"
     >
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="com.example.user.homeworkapplication.Air_Fragment">
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        android:layout_weight="25"
+        android:id="@+id/zero_floor_Linear"
+        android:paddingBottom="0dp"
+        android:layout_marginBottom="3dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="HR"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="50dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/zero_floor_Name"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="dd"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:textSize="50dp"
+            android:textColor="#FFFFFF"
+            android:background="#FAEB78"
+            android:id="@+id/zero_floor_Data1"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        android:layout_weight="25"
+
+
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        >
         <LinearLayout
             android:layout_width="match_parent"
-            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="vertical"
-            android:baselineAligned="true"
-            android:layout_height="wrap_content">
+            android:id="@+id/one_floor_Linear"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="3dp"
+            >
+            <TextView
+                android:paddingTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Co2"
+                android:layout_weight="2"
+                android:gravity="left|top"
+                android:textColor="#FFFFFF"
 
-            <!-- TODO: Update blank fragment layout -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                >
-
-            </LinearLayout>
-
-            <LinearLayout
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                >
-                <LinearLayout
-                    android:paddingTop="30dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Co2"
-                        android:textSize="30dp"
-                        android:layout_marginRight="80dp"
-                        android:id="@+id/one_floor_Data1"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Co"
-                        android:id="@+id/one_floor_Data2"
-                        android:textSize="30dp"
-                        />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:paddingTop="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="123"
-                        android:textSize="30dp"
-                        android:layout_marginRight="80dp"
-                        android:id="@+id/one_floor_number1"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="456"
-                        android:textSize="30dp"
-                        android:id="@+id/one_floor_number2"
-                        />
-                </LinearLayout>
-
-
-
-            </LinearLayout>
-            <LinearLayout
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                >
-                <LinearLayout
-                    android:paddingTop="30dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="So2"
-                        android:id="@+id/two_floor_Data1"
-                        android:textSize="30dp"
-                        android:layout_marginRight="80dp"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="No2"
-                        android:textSize="30dp"
-                        android:id="@+id/twp_floor_Data2"
-                        />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:paddingTop="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="123"
-                        android:textSize="30dp"
-                        android:layout_marginRight="80dp"
-                        android:id="@+id/two_floor_number1"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="456"
-                        android:textSize="30dp"
-                        android:id="@+id/two_floor_number2"
-                        />
-                </LinearLayout>
-
-
-
-            </LinearLayout>
-
-            <LinearLayout
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                >
-                <LinearLayout
-                    android:paddingTop="30dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Pm2"
-                        android:textSize="30dp"
-                        android:layout_marginRight="80dp"
-                        android:id="@+id/three_floor_Data1"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="O3"
-                        android:textSize="30dp"
-                        android:id="@+id/three_floor_Data2"
-                        />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:paddingTop="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="123"
-                        android:textSize="30dp"
-                        android:layout_marginRight="80dp"
-                        android:id="@+id/three_floor_number1"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="456"
-                        android:textSize="30dp"
-                        android:id="@+id/three_floor_number4"
-                        />
-                </LinearLayout>
-
-
-
-            </LinearLayout>
-
-            <LinearLayout
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                >
-                <LinearLayout
-                    android:paddingTop="30dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Time"
-                        android:textSize="30dp"
-                        android:layout_marginRight="80dp"
-                        android:id="@+id/four_floor_Data1"
-
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Name"
-                        android:textSize="20dp"
-                        android:id="@+id/four_floor_Data2"
-                        />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:paddingTop="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="123"
-                        android:textSize="20dp"
-                        android:layout_marginRight="80dp"
-                        android:paddingLeft="10dp"
-                        android:id="@+id/four_floor_number1"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="456"
-                        android:textSize="20dp"
-                        android:paddingLeft="20dp"
-                        android:id="@+id/four_floor_number2"
-                        />
-                </LinearLayout>
-
-
-
-            </LinearLayout>
+                android:id="@+id/one_floor_Name1"
+                android:textSize="30dp"
+                />
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="dd"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:background="#777777"
+            android:id="@+id/one_floor_Data1"
+            android:textSize="60dp"
+                android:textStyle="bold" />
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="0dp"
+            android:id="@+id/one_floor_Linear1"
+            android:layout_marginBottom="3dp"
+            >
+
+            <TextView
+                android:paddingTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="CO"
+                android:layout_weight="2"
+                android:gravity="left|top"
+                android:textColor="#FFFFFF"
+
+                android:id="@+id/one_floor_Name2"
+                android:textSize="30dp"
+                />
+            <TextView
+                android:paddingTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#80E12A"
+                android:id="@+id/one_floor_Data2"
+                android:gravity="center"
+                android:text="dd"
+                android:textColor="#FFFFFF"
+                android:textSize="60dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        android:layout_weight="25"
+        android:paddingBottom="3dp"
+
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/two_floor_Linear1"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="3dp"
+            >
+
+            <TextView
+                android:paddingTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="O3"
+                android:layout_weight="2"
+                android:gravity="left|top"
+                android:textColor="#FFFFFF"
+
+                android:id="@+id/two_floor_Name1"
+                android:textSize="30dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="dd"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#777777"
+                android:id="@+id/two_floor_Data1"
+                android:textColor="#FFFFFF"
+                android:textSize="60dp"
+
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="0dp"
+            android:id="@+id/two_floor_Linear2"
+            android:layout_marginBottom="3dp"
+
+            >
+
+            <TextView
+                android:paddingTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="NO2"
+                android:layout_weight="2"
+                android:gravity="left|top"
+                android:textColor="#FFFFFF"
+
+                android:id="@+id/two_floor_Name2"
+                android:textSize="30dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#777777"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/two_floor_Data2"
+                android:textSize="60dp"
+                android:textStyle="bold" />
+
+            </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        android:layout_weight="25"
+
+
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/three_floor_Linear1"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="3dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="PM2_5"
+                android:layout_weight="2"
+                android:gravity="left|top"
+
+                android:textColor="#FFFFFF"
+                android:id="@+id/three_floor_Name1"
+                android:textSize="30dp"
+                />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="dd"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="#777777"
+            android:textColor="#FFFFFF"
+            android:id="@+id/three_floor_Data1"
+            android:textSize="60dp"
+            android:textStyle="bold"
+            />
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="0dp"
+            android:id="@+id/three_floor_Linear2"
+            android:layout_marginBottom="3dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SO2"
+                android:layout_weight="2"
+                android:gravity="left|top"
+
+                android:textColor="#FFFFFF"
+                android:id="@+id/three_floor_Name2"
+                android:textSize="30dp"
+                />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#777777"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:id="@+id/three_floor_Data2"
+            android:layout_weight="1"
+            android:textSize="60dp"
+            android:textStyle="bold" />
+
+            </LinearLayout>
     </LinearLayout>
 
 
 
-</GridLayout>
+</LinearLayout>
